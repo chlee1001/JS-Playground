@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: $place-header-hegiht;
 
     .title {
       display: flex;
@@ -25,6 +26,48 @@
       padding-right: $m-padding;
       font-size: 15px;
       font-weight: 700;
+    }
+  }
+
+  .place-tab {
+    display: flex;
+    height: $place-tab-height;
+    background-color: #03b753;
+  }
+  .tab-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    width: 100%;
+
+    .tab {
+      flex: 1;
+      padding: 0 12px;
+      font-size: 16px;
+      text-align: center;
+      opacity: 0.7;
+
+      &.is-active {
+        font-weight: 700;
+        opacity: 1;
+        .txt::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: #fff;
+        }
+      }
+
+      .txt {
+        position: relative;
+        display: inline-block;
+        padding: 0 4px;
+        line-height: 46px;
+      }
     }
   }
 }
