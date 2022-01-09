@@ -189,6 +189,19 @@ textarea::-webkit-outer-spin-button {
   text-indent: -9999px;
 }
 
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
 .dimmed-layer {
   position: fixed;
   top: 0;
