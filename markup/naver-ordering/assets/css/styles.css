@@ -487,6 +487,132 @@ textarea::-webkit-outer-spin-button {
   color: #ff3d3b;
 }
 
+.recent-order-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  padding: 18px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.recent-order-area .recent-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 8px;
+  border-right: 1px solid #f2f2f2;
+  line-height: 1.42;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+}
+
+.recent-order-area .recent-title .ico-color {
+  margin-bottom: 4px;
+  width: 14px;
+}
+
+.recent-order-area .recent-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recent-order-area .recent-menu-item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 16px;
+  width: 80px;
+  text-align: center;
+}
+
+.recent-order-area .recent-menu-item.is-ordered {
+  padding-right: 16px;
+  border-right: 1px solid #f2f2f2;
+}
+
+.recent-order-area .recent-menu-item:last-child {
+  padding-right: 18px;
+}
+
+.recent-order-area .menu-img-area {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #f9f9f9;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.recent-order-area .badge-popular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+  border-radius: 10px;
+  line-height: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #ff61a7;
+  color: #fff;
+}
+
+.recent-order-area .menu-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.recent-order-area .badge-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px;
+  border: 1px solid #e5e5e5;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.recent-order-area .ico-cart {
+  width: 16px;
+  height: 16px;
+}
+
+.recent-order-area .menu-name {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recent-order-area .menu-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff3d3b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .container {
   padding-top: 94px;
 }
