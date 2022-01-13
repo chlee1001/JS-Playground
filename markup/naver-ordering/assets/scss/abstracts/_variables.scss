@@ -1,8 +1,8 @@
 // font
-$font-default: -apple-system, BlinkMacSystemFont, helvetica, Apple SD Gothic Neo,
-  sans-serif;
+$font-default: -apple-system, BlinkMacSystemFont, helvetica, Apple SD Gothic Neo, sans-serif;
 
 // size
 $m-padding: 18px;
 $place-header-hegiht: 48px;
 $place-tab-height: 46px;
+$header-height: $place-header-hegiht + $place-tab-height;

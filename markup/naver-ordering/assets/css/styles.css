@@ -372,6 +372,82 @@ textarea::-webkit-outer-spin-button {
   line-height: 46px;
 }
 
+.menu-category-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 94px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.menu-category-area .common-inner {
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.menu-category-area .common-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.menu-category-area .common-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.menu-category-area .category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 54px;
+}
+
+.menu-category-area .category-item:first-child {
+  padding-left: 18px;
+}
+
+.menu-category-area .category-item:last-child {
+  padding-right: 18px;
+}
+
+.menu-category-area .category-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.menu-category-area .category-tab.is-active {
+  background-color: #424242;
+  font-weight: 700;
+  color: #fff;
+}
+
 .order-info-area {
   padding: 10px 18px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
@@ -615,6 +691,7 @@ textarea::-webkit-outer-spin-button {
 
 .container {
   padding-top: 94px;
+  background-color: #f4f7f9;
 }
 
 .common-inner {
