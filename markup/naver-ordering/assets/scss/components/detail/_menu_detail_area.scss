@@ -1,0 +1,36 @@
+.menu-detail-area {
+    background-color: #fff;
+
+    // 메뉴 이미지 영역
+    .menu-img {
+        position: relative;
+        height: 300px;
+        background-color: #f8fafb;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 130px;
+            background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+            z-index: 1;
+            opacity: 0.2;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 65px;
+            background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+            z-index: 1;
+            opacity: 0.15;
+        }
+    }
+}
