@@ -1014,18 +1014,19 @@ textarea::-webkit-outer-spin-button {
 .recent-order-area .recent-menu-item {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  padding-left: 16px;
+  position: relative;
+  padding-right: 16px;
   width: 80px;
   text-align: center;
 }
 
 .recent-order-area .recent-menu-item.is-ordered {
-  padding-right: 16px;
+  padding-left: 16px;
   border-right: 1px solid #f2f2f2;
 }
 
-.recent-order-area .recent-menu-item:last-child {
-  padding-right: 18px;
+.recent-order-area .recent-menu-item.is-ordered + .recent-menu-item {
+  padding-left: 16px;
 }
 
 .recent-order-area .menu-img-area {
@@ -1058,8 +1059,8 @@ textarea::-webkit-outer-spin-button {
 
 .recent-order-area .badge-cart {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 50px;
+  right: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
