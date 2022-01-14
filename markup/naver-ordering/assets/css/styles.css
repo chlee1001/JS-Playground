@@ -828,6 +828,90 @@ textarea::-webkit-outer-spin-button {
   color: #ff3d3b;
 }
 
+.order-box-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-top: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  z-index: 9100;
+}
+
+.order-box-area .common-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.order-box-area .menu-name {
+  font-size: 15px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .menu-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff3d3b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .btn-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 128px;
+  height: 46px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01d760), to(#0ad18e));
+  background-image: linear-gradient(to right, #01d760, #0ad18e);
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.order-box-area .icon {
+  position: relative;
+  margin-left: 6px;
+}
+
+.order-box-area .ico-cart {
+  width: 20px;
+  height: 20px;
+}
+
+.order-box-area .num {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff3d3b;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
 .recent-order-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,6 +1040,7 @@ textarea::-webkit-outer-spin-button {
 
 .container {
   padding-top: 94px;
+  padding-bottom: 70px;
   background-color: #f4f7f9;
 }
 
