@@ -7,7 +7,7 @@
     <title>네이버 주문 페이지</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
-  <body>
+  <body class="scroll-off">
     <div class="container">
       <!-- 고정헤더 영역 -->
       <header class="header-area">
@@ -223,6 +223,43 @@
         <!-- // 주문자리뷰 -->
       </div>
       <!-- // 주문자리뷰 영역 -->
+
+      <!-- 옵션팝업 영역 -->
+      <div class="option-popup-area">
+        <div class="dimmed-layer light"></div>
+        <div class="menu-option-popup">
+          <svg class="content-top-pattern" width="100%" height="100%">
+            <defs>
+              <pattern
+                id="pattern-triangle"
+                x="0"
+                y="0"
+                width="10"
+                height="11"
+                patternUnits="userSpaceOnUse"
+              >
+                <polygon points="5 5, 10 10, 10 11, 0 11, 0 10"></polygon>
+              </pattern>
+            </defs>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              fill="url(#pattern-triangle)"
+            ></rect>
+          </svg>
+
+          <div class="content-top">top</div>
+          <div class="content-body">
+            <div style="height: 1000px"></div>
+          </div>
+          <div class="content-bottom">
+            <button>button</button>
+          </div>
+        </div>
+      </div>
+      <!-- // 옵션팝업 영역 -->
     </div>
   </body>
 </html>
