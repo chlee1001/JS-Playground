@@ -581,6 +581,115 @@ textarea::-webkit-outer-spin-button {
   color: #333;
 }
 
+.menu-detail-area .order-type-area {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.menu-detail-area .order-type-area .type-select,
+.menu-detail-area .order-type-area .type-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-detail-area .order-type-area .type-select .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-detail-area .order-type-area .type-select .ico-n-logo {
+  margin-right: 4px;
+  width: 20px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch-box {
+  margin-top: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch {
+  width: 80px;
+  line-height: 37px;
+  font-size: 13px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch.is-active {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 3px;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch.is-active::after {
+  display: none;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch + .tab-switch {
+  position: relative;
+}
+
+.menu-detail-area .order-type-area .type-select .tab-switch + .tab-switch::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1px;
+  height: 17px;
+  background-color: #e7e7e7;
+}
+
+.menu-detail-area .order-type-area .type-amount {
+  margin-top: 20px;
+}
+
+.menu-detail-area .order-type-area .type-amount .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-detail-area .order-type-area .btn-order {
+  display: block;
+  margin-top: 20px;
+  padding: 0 16px;
+  width: 100%;
+  line-height: 46px;
+  border-radius: 3px;
+  font-weight: 700;
+  background-color: #01d760;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-detail-area .order-type-area .btn-order:disabled {
+  background-color: #c9c9c9;
+  color: #fff;
+}
+
 .go-to-top {
   padding: 16px 0 32px;
   background-color: #fff;

@@ -81,4 +81,95 @@
             color: $booking-color-text6;
         }
     }
+
+    // 메뉴 주문 영역
+    .order-type-area {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid $booking-color-border160;
+
+        .type-select,
+        .type-amount {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .type-select {
+            .title {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: -0.3px;
+                color: $booking-color-text6;
+            }
+
+            .ico-n-logo {
+                margin-right: 4px;
+                width: 20px;
+            }
+
+            .tab-switch-box {
+                margin-top: 0;
+                // width: 160px;
+                border-radius: 3px;
+                overflow: hidden;
+            }
+            .tab-switch {
+                width: 80px;
+                line-height: 37px;
+                font-size: 13px;
+                &.is-active {
+                    flex: 1;
+                    border-radius: 3px;
+                    &::after {
+                        display: none;
+                    }
+                }
+                & + .tab-switch {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                        width: 1px;
+                        height: 17px;
+                        background-color: #e7e7e7;
+                    }
+                }
+            }
+        }
+
+        .type-amount {
+            margin-top: 20px;
+
+            .title {
+                display: flex;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: -0.3px;
+                color: $booking-color-text6;
+            }
+        }
+
+        .btn-order {
+            display: block;
+            margin-top: 20px;
+            padding: 0 16px;
+            width: 100%;
+            line-height: 46px;
+            border-radius: 3px;
+            font-weight: 700;
+            background-color: $green;
+            color: #fff;
+            @include ellipsis;
+            &:disabled {
+                background-color: #c9c9c9;
+                color: $booking-color-text131;
+            }
+        }
+    }
 }

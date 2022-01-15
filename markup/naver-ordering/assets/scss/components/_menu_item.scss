@@ -40,7 +40,7 @@
         margin-top: 4px;
         letter-spacing: -0.4px;
         color: $booking-color-text5;
-        @include multi-ellipse(14px, 19px, 2);
+        @include multi-ellipsis(14px, 19px, 2);
     }
 
     .menu-price {

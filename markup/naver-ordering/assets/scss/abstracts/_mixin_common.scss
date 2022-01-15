@@ -1,10 +1,10 @@
-@mixin ellipse {
+@mixin ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-@mixin multi-ellipse($font-size, $line-height, $lines) {
+@mixin multi-ellipsis($font-size, $line-height, $lines) {
     font-size: $font-size;
     line-height: $line-height;
     max-height: $line-height * $lines;
