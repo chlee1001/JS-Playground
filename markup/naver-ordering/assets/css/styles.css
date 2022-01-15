@@ -784,6 +784,68 @@ textarea::-webkit-outer-spin-button {
   color: #fff;
 }
 
+.menu-review-area .orderer-img-area {
+  padding-bottom: 22px;
+  background-color: #fff;
+}
+
+.menu-review-area .orderer-img-area .title {
+  padding: 6px 18px 12px;
+}
+
+.menu-review-area .title {
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.menu-review-area .title .num {
+  margin-left: 6px;
+  color: #01d760;
+}
+
+.menu-review-area .orderer-pic-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-review-area .orderer-pic-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-review-area .orderer-pic-item + .orderer-pic-item {
+  margin-left: 1px;
+}
+
+.menu-review-area .orderer-pic-item:first-child::before, .menu-review-area .orderer-pic-item:last-child::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+
+.menu-review-area .orderer-pic-link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-review-area .orderer-pic-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
 .go-to-top {
   padding: 16px 0 32px;
   background-color: #fff;
