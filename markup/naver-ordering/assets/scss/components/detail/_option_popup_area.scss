@@ -96,8 +96,59 @@
 
     .content-body {
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-        // height: 500px;
+        -webkit-overflow-scrolling: touch;
+
+        .option-group {
+            background-color: #fff;
+            & + .option-group {
+                margin-top: 12px;
+            }
+        }
+
+        .option-title {
+            padding: 18px $m-padding;
+            border-bottom: 1px dashed $booking-color-border2;
+            font-weight: 800;
+            @include common-inner;
+
+            .title {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+            }
+            .badge {
+                margin-right: 8px;
+                padding: 0 4px;
+                border-radius: 3px;
+                background-color: $booking-color-bg194;
+                line-height: 17px;
+                font-size: 13px;
+                color: #fff;
+                &.required {
+                    background-color: $booking-color-bg193;
+                }
+            }
+            .desc {
+                margin-top: 2px;
+                line-height: 24px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+
+        .option-list {
+            padding: 24px 18px 24px 28px;
+            @include common-inner;
+        }
+
+        .option-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:not(:first-child) {
+                margin-top: 14px;
+            }
+        }
     }
 
     .content-bottom {

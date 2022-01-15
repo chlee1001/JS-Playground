@@ -1150,7 +1150,77 @@ textarea::-webkit-outer-spin-button {
 .option-popup-area .content-body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  /* Lets it scroll lazy */
+}
+
+.option-popup-area .content-body .option-group {
+  background-color: #fff;
+}
+
+.option-popup-area .content-body .option-group + .option-group {
+  margin-top: 12px;
+}
+
+.option-popup-area .content-body .option-title {
+  padding: 18px 18px;
+  border-bottom: 1px dashed #ecf0f2;
+  font-weight: 800;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.option-popup-area .content-body .option-title .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.option-popup-area .content-body .option-title .badge {
+  margin-right: 8px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background-color: #d0d0d0;
+  line-height: 17px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.option-popup-area .content-body .option-title .badge.required {
+  background-color: #000;
+}
+
+.option-popup-area .content-body .option-title .desc {
+  margin-top: 2px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.option-popup-area .content-body .option-list {
+  padding: 24px 18px 24px 28px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.option-popup-area .content-body .option-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option-popup-area .content-body .option-item:not(:first-child) {
+  margin-top: 14px;
 }
 
 .option-popup-area .content-bottom {
