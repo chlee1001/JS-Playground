@@ -148,6 +148,76 @@
             &:not(:first-child) {
                 margin-top: 14px;
             }
+
+            .label {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                font-size: 17px;
+                &.checked {
+                    font-weight: 700;
+                    .price {
+                        font-weight: 600;
+                        color: $point-color;
+                    }
+                }
+                .label-txt {
+                    padding-right: 8px;
+                }
+                .label-icon {
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    width: 28px;
+                    height: 28px;
+                    border: 1px solid $booking-color-border101;
+                }
+            }
+
+            .input-radio,
+            .input-check {
+                &:checked + .label {
+                    font-weight: 700;
+                }
+            }
+
+            .input-radio {
+                & + .label .label-icon {
+                    border-radius: 100%;
+                }
+                &:checked + .label .label-icon {
+                    border: 8px solid $green;
+                }
+            }
+
+            .input-check {
+                & + .label .label-icon {
+                    border-radius: 3px;
+                }
+
+                &:checked + .label {
+                    .price {
+                        font-weight: 600;
+                        color: $point-color;
+                    }
+                    .label-icon {
+                        position: relative;
+                        border-color: $green;
+                        background-color: $green;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 14px;
+                            height: 9px;
+                            border: 2px solid #fff;
+                            border-width: 0 0 2px 2px;
+                            transform: translate(-50%, -70%) rotate(-45deg);
+                        }
+                    }
+                }
+            }
         }
     }
 
