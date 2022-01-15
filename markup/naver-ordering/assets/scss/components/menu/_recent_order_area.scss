@@ -28,16 +28,18 @@
 
     .recent-menu-item {
         box-sizing: content-box;
-        padding-left: 16px;
+        position: relative;
+        padding-right: 16px;
         width: 80px;
         text-align: center;
 
         &.is-ordered {
-            padding-right: 16px;
+            padding-left: 16px;
             border-right: 1px solid $booking-color-bg102;
-        }
-        &:last-child {
-            padding-right: $m-padding;
+
+            & + .recent-menu-item {
+                padding-left: 16px;
+            }
         }
     }
 
@@ -71,8 +73,8 @@
 
     .badge-cart {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        top: 50px;
+        right: 16px;
         display: flex;
         padding: 6px;
         border: 1px solid $booking-color-border150;
@@ -89,12 +91,12 @@
         margin-top: 8px;
         font-weight: 600;
         font-size: 14px;
-        @include ellipse;
+        @include ellipsis;
     }
     .menu-price {
         font-size: 13px;
         font-weight: 700;
         color: $point-color;
-        @include ellipse;
+        @include ellipsis;
     }
 }
