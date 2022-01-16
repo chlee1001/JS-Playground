@@ -1,7 +1,9 @@
 .container {
-    padding-top: $place-header-hegiht + $place-tab-height;
-    padding-bottom: $order-box-area-height;
     background-color: $booking-color-border151;
+    &:not(.order) {
+        padding-top: $place-header-hegiht + $place-tab-height;
+        padding-bottom: $order-box-area-height;
+    }
 }
 
 .common-inner {
