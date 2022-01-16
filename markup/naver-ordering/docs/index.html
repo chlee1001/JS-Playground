@@ -834,11 +834,11 @@
       <!-- // 맨위로 -->
     </div>
 
-    <div class="dimmed-layer" hidden></div>
-    <div class="order-type-popup" hidden>
+    <div class="dimmed-layer hidden"></div>
+    <div class="order-type-popup hidden">
       <p class="title">어디서 드시나요?</p>
       <div class="type-list">
-        <a href="#" class="type-item">
+        <a href="#" class="type-item" onClick="popupClose()">
           <!-- <img src="" alt="포장" class="icon" /> -->
           <svg
             class="icon"
@@ -863,7 +863,7 @@
           <p class="desc">포장해서 가져갈게요</p>
           <span class="btn-selection">선택</span>
         </a>
-        <a href="#" class="type-item">
+        <a href="#" class="type-item" onClick="popupClose()">
           <!-- <img src="" alt="매장" class="icon" /> -->
           <svg
             class="icon"
@@ -898,5 +898,31 @@
         </a>
       </div>
     </div>
+
+    <script>
+      window.onload = function () {
+        popupOpen();
+      };
+      const popupOpen = () => {
+        document.querySelector(".dimmed-layer").classList.remove("hidden");
+        document.querySelector(".order-type-popup").classList.remove("hidden");
+      };
+      const popupClose = () => {
+        document.querySelector(".dimmed-layer").classList.add("hidden");
+        document.querySelector(".order-type-popup").classList.add("hidden");
+      };
+
+      // 메뉴 리스트 토글
+      const btnToggle = document.querySelectorAll(".btn-toggle");
+      const toggleMenuList = (e) => {
+        e.currentTarget
+          .closest(".menu-list-area")
+          .classList.toggle("is-closed");
+      };
+
+      btnToggle.forEach(function (e) {
+        e.addEventListener("click", toggleMenuList);
+      });
+    </script>
   </body>
 </html>
