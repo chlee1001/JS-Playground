@@ -2083,7 +2083,7 @@ textarea::-webkit-outer-spin-button {
 }
 
 .order-content-extra .orderer-info-area,
-.order-content-extra .plcae-map-area,
+.order-content-extra .place-map-area,
 .order-content-extra .agreement-area {
   padding: 0 18px 30px;
   background-color: #fff;
@@ -2176,6 +2176,45 @@ textarea::-webkit-outer-spin-button {
   background-color: #fff;
   color: #242424;
   font-size: 15px;
+}
+
+.order-content-extra .place-map-area {
+  margin-top: 2px;
+  padding-bottom: 0;
+}
+
+.order-content-extra .place-map-area .map-area {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #fafbfc;
+  overflow: hidden;
+}
+
+.order-content-extra .place-map-area .place-address-box {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.order-content-extra .place-map-area .plcae-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #242424;
+}
+
+.order-content-extra .place-map-area .place-address {
+  margin-top: 4px;
+  color: #666;
+}
+
+.order-content-extra .place-map-area .place-address-detail {
+  margin-top: 8px;
+  color: #006f49;
+}
+
+.order-content-extra .place-map-area .img-map {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e9eef0;
 }
 
 .order-form-area .page-title-area {
