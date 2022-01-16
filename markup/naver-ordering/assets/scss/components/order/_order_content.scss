@@ -71,5 +71,117 @@
                 color: #8f8f8f;
             }
         }
+
+        .menu-list {
+            padding: 0 $m-padding;
+        }
+
+        .menu-item {
+            position: relative;
+            align-items: flex-start;
+            padding: 22px $m-padding;
+
+            .menu-name-group {
+                padding-right: 40px;
+            }
+
+            .menu-name {
+                line-height: 23px;
+                font-size: 18px;
+            }
+
+            .menu-desc {
+                margin-top: 2px;
+            }
+
+            .btn-option {
+                display: inline-block;
+                margin-top: 8px;
+                padding: 0 6px;
+                line-height: 20px;
+                border-radius: 3px;
+                border: 1px solid $booking-color-border109;
+                background-color: $booking-color-bg21;
+                font-size: 12px;
+                color: $booking-color-text4;
+            }
+
+            .amount-and-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 18px;
+
+                .menu-price {
+                    margin-top: 0;
+                    font-size: 18px;
+                }
+            }
+
+            .btn-delete {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 22px 18px;
+                .ico-delete {
+                    width: 14px;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            margin: 0 $m-padding;
+            border-top: 2px solid $booking-color-border112;
+            font-size: 18px;
+            font-weight: 700;
+            .total-price {
+                font-size: 19px;
+                color: $point-color;
+            }
+        }
+    }
+
+    .btn-menu-add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 22px auto 30px;
+        width: 150px;
+        line-height: 48px;
+        border-radius: 24px;
+        border: 1px solid $booking-color-border101;
+        background-color: #fff;
+        color: $booking-color-text2;
+        box-shadow: 0 2px 3px 0 rgba($color: #000000, $alpha: 0.04);
+
+        .ico-add {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 6px;
+            width: 13px;
+            height: 13px;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 13px;
+                height: 1px;
+                background-color: $green;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: 1px;
+                height: 13px;
+                background-color: $green;
+            }
+        }
     }
 }

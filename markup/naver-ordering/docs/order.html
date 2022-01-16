@@ -48,7 +48,7 @@
 
             <div class="order-content-body">
               <!-- 담은 메뉴가 없음 -->
-              <div class="no-order">
+              <div class="no-order hidden">
                 <img
                   src="../assets/images/ico-exclaim.svg"
                   alt=""
@@ -58,8 +58,108 @@
                 <p class="txt">담은 메뉴가 없습니다.</p>
               </div>
               <!-- // 담은 메뉴가 없음 -->
+
+              <!-- 담은 메뉴가 있음 -->
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div class="menu-img-area">
+                    <img
+                      src="https://via.placeholder.com/74/ffffff/000000"
+                      alt="{메뉴명}"
+                      class="menu-img"
+                      width="74"
+                      height="74"
+                    />
+                  </div>
+                  <div class="menu-info-area">
+                    <p class="menu-name-group">
+                      <span class="menu-name">메뉴 이름</span>
+                    </p>
+
+                    <p class="menu-desc">
+                      메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한
+                      설명이 적혀있습니다
+                    </p>
+
+                    <button class="btn-option">옵션변경</button>
+                    <div class="amount-and-price">
+                      <div class="amount-select">
+                        <button
+                          class="btn-minus enabled"
+                          aria-label="빼기"
+                        ></button>
+                        <span class="amount">2</span>
+                        <button
+                          class="btn-plus enabled"
+                          aria-label="더하기"
+                        ></button>
+                      </div>
+                      <p class="menu-price">19,998원</p>
+                    </div>
+                  </div>
+                  <button class="btn-delete">
+                    <img
+                      src="../assets/images/ico-close.svg"
+                      alt="삭제"
+                      class="ico-delete"
+                    />
+                  </button>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-img-area">
+                    <img
+                      src="https://via.placeholder.com/74/ffffff/000000"
+                      alt="{메뉴명}"
+                      class="menu-img"
+                      width="74"
+                      height="74"
+                    />
+                  </div>
+                  <div class="menu-info-area">
+                    <p class="menu-name-group">
+                      <span class="menu-name">메뉴 이름</span>
+                    </p>
+
+                    <p class="menu-desc">
+                      메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한
+                      설명이 적혀있습니다
+                    </p>
+
+                    <button class="btn-option">옵션변경</button>
+                    <div class="amount-and-price">
+                      <div class="amount-select">
+                        <button
+                          class="btn-minus disabled"
+                          aria-label="빼기"
+                        ></button>
+                        <span class="amount">1</span>
+                        <button
+                          class="btn-plus enabled"
+                          aria-label="더하기"
+                        ></button>
+                      </div>
+                      <p class="menu-price">9,999원</p>
+                    </div>
+                  </div>
+                  <button class="btn-delete">
+                    <img
+                      src="../assets/images/ico-close.svg"
+                      alt="삭제"
+                      class="ico-delete"
+                    />
+                  </button>
+                </li>
+              </ul>
+
+              <div class="order-total">
+                <span class="total-txt">총 주문금액</span>
+                <span class="total-price">29,997원</span>
+              </div>
+              <!-- // 담은 메뉴가 있음 -->
             </div>
           </div>
+
+          <a href="#" class="btn-menu-add"> <i class="ico-add"></i>메뉴추가 </a>
         </div>
         <!-- // 주문서 메뉴 -->
       </div>

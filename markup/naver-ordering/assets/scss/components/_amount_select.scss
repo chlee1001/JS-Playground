@@ -19,6 +19,7 @@
             background-color: #00d780;
             color: #fff;
         }
+        &.disabled,
         &:disabled {
             color: $booking-color-border102;
         }
