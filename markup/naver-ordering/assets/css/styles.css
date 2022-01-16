@@ -1915,6 +1915,21 @@ textarea::-webkit-outer-spin-button {
   letter-spacing: -0.4px;
 }
 
+.order-content .order-content-body {
+  border-top: 1px dashed #e5e5e5;
+}
+
+.order-content .order-content-body .no-order {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.order-content .order-content-body .no-order .txt {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
 .order-form-area .page-title-area {
   height: 105px;
   background-image: linear-gradient(264deg, #3accff, #2cec88);
