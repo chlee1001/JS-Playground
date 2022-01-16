@@ -16,6 +16,7 @@
             font-size: 20px;
             font-weight: 700;
             color: #fff;
+            z-index: 1;
         }
 
         .btn-close {
@@ -24,9 +25,39 @@
             right: 0;
             width: 56px;
             height: 56px;
+            z-index: 1;
             .ico-close {
                 width: 18px;
             }
         }
+    }
+
+    .btn-order-area {
+        margin-top: 20px;
+        @include common-inner;
+
+        .btn-order {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px $m-padding 0;
+            width: calc(100% - #{$m-padding}* 2);
+            height: 50px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: $green;
+            color: #fff;
+            .ico-n-logo {
+                margin-right: 6px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    .go-to-top {
+        padding: 26px 0;
+        background: none;
     }
 }

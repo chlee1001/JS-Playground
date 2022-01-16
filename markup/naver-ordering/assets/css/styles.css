@@ -2217,6 +2217,74 @@ textarea::-webkit-outer-spin-button {
   border-top: 1px solid #e9eef0;
 }
 
+.order-content-extra .agreement-area .agreement-list {
+  margin-top: 10px;
+  border: 1px solid #d5dadd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.order-content-extra .agreement-area .agreement-item:not(:first-child) {
+  border-top: 1px solid #ecf0f2;
+}
+
+.order-content-extra .agreement-area .agreement-item.is-open .agreement-content {
+  display: block;
+}
+
+.order-content-extra .agreement-area .agreement-item.is-open .btn-toggle {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.order-content-extra .agreement-area .agreement-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+  height: 44px;
+  color: #242424;
+}
+
+.order-content-extra .agreement-area .agreement-title .txt {
+  font-size: 15px;
+}
+
+.order-content-extra .agreement-area .agreement-title .btn-toggle {
+  width: 44px;
+  height: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.order-content-extra .agreement-area .agreement-content {
+  display: none;
+  padding: 12px;
+  max-height: 194px;
+  border-top: 1px solid #ecf0f2;
+  font-size: 14px;
+  background-color: #f8fafb;
+  color: #666;
+  overflow-y: auto;
+}
+
+.order-content-extra .agreement-area .agreement-info-txt {
+  margin-top: 14px;
+  padding-left: 8px;
+  border-left: 3px solid #d5dadd;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.45px;
+  color: #666;
+}
+
 .order-form-area .page-title-area {
   height: 105px;
   background-image: linear-gradient(264deg, #3accff, #2cec88);
@@ -2241,6 +2309,7 @@ textarea::-webkit-outer-spin-button {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  z-index: 1;
 }
 
 .order-form-area .page-title-area .btn-close {
@@ -2249,10 +2318,49 @@ textarea::-webkit-outer-spin-button {
   right: 0;
   width: 56px;
   height: 56px;
+  z-index: 1;
 }
 
 .order-form-area .page-title-area .btn-close .ico-close {
   width: 18px;
+}
+
+.order-form-area .btn-order-area {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.order-form-area .btn-order-area .btn-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 18px 0;
+  width: calc(100% - 18px* 2);
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #01d760;
+  color: #fff;
+}
+
+.order-form-area .btn-order-area .btn-order .ico-n-logo {
+  margin-right: 6px;
+  width: 18px;
+  height: 18px;
+}
+
+.order-form-area .go-to-top {
+  padding: 26px 0;
+  background: none;
 }
 
 .container {
