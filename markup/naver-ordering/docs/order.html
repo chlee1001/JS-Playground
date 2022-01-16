@@ -7,8 +7,8 @@
     <title>네이버 주문 페이지</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
+
   <body>
-    <!-- <body class="scroll-off"> -->
     <div class="container order">
       <div class="order-form-area">
         <!-- 주문서 타이틀 -->
@@ -48,24 +48,24 @@
             </div>
 
             <div class="order-content-body">
-              <!-- 담은 메뉴가 없음 -->
+              <!-- 담은 메뉴 없음 -->
               <div class="no-order hidden">
                 <img
+                  class="icon"
                   src="../assets/images/ico-exclaim.svg"
                   alt=""
                   aria-hidden="true"
-                  class="icon"
                 />
                 <p class="txt">담은 메뉴가 없습니다.</p>
               </div>
-              <!-- // 담은 메뉴가 없음 -->
+              <!-- // 담은 메뉴 없음 -->
 
-              <!-- 담은 메뉴가 있음 -->
+              <!-- 담은 메뉴 있음 -->
               <ul class="menu-list">
                 <li class="menu-item">
                   <div class="menu-img-area">
                     <img
-                      src="https://via.placeholder.com/74/ffffff/000000"
+                      src="https://via.placeholder.com/74/ffffff/0000000"
                       alt="{메뉴명}"
                       class="menu-img"
                       width="74"
@@ -74,20 +74,18 @@
                   </div>
                   <div class="menu-info-area">
                     <p class="menu-name-group">
-                      <span class="menu-name">메뉴 이름</span>
+                      <span class="menu-name">메뉴이름</span>
                     </p>
-
                     <p class="menu-desc">
                       메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한
                       설명이 적혀있습니다
                     </p>
-
                     <button class="btn-option">옵션변경</button>
                     <div class="amount-and-price">
                       <div class="amount-select">
                         <button
                           class="btn-minus enabled"
-                          aria-label="빼기"
+                          aira-label="빼기"
                         ></button>
                         <span class="amount">2</span>
                         <button
@@ -109,7 +107,7 @@
                 <li class="menu-item">
                   <div class="menu-img-area">
                     <img
-                      src="https://via.placeholder.com/74/ffffff/000000"
+                      src="https://via.placeholder.com/74/ffffff/0000000"
                       alt="{메뉴명}"
                       class="menu-img"
                       width="74"
@@ -118,26 +116,22 @@
                   </div>
                   <div class="menu-info-area">
                     <p class="menu-name-group">
-                      <span class="menu-name">메뉴 이름</span>
+                      <span class="menu-name">메뉴이름</span>
                     </p>
-
                     <p class="menu-desc">
                       메뉴에 대한 간단한 설명이 적혀있습니다 메뉴에 대한 간단한
                       설명이 적혀있습니다
                     </p>
-
                     <button class="btn-option">옵션변경</button>
                     <div class="amount-and-price">
                       <div class="amount-select">
                         <button
                           class="btn-minus disabled"
-                          aria-label="빼기"
+                          aira-label="빼기"
+                          onClick="modalOpen()"
                         ></button>
                         <span class="amount">1</span>
-                        <button
-                          class="btn-plus enabled"
-                          aria-label="더하기"
-                        ></button>
+                        <button class="btn-plus" aria-label="더하기"></button>
                       </div>
                       <p class="menu-price">9,999원</p>
                     </div>
@@ -156,11 +150,11 @@
                 <span class="total-txt">총 주문금액</span>
                 <span class="total-price">29,997원</span>
               </div>
-              <!-- // 담은 메뉴가 있음 -->
+              <!-- // 담은 메뉴 있음 -->
             </div>
           </div>
 
-          <a href="#" class="btn-menu-add"> <i class="ico-add"></i>메뉴추가 </a>
+          <a href="#" class="btn-menu-add"><i class="ico-add"></i>메뉴추가</a>
         </div>
         <!-- // 주문서 메뉴 -->
 
@@ -179,6 +173,7 @@
                         id="need"
                         class="input-radio"
                         name="disposables"
+                        checked
                       />
                       <label for="need" class="input-radio-button need"
                         >필요해요</label
@@ -190,7 +185,6 @@
                         id="no-need"
                         class="input-radio"
                         name="disposables"
-                        checked
                       />
                       <label for="no-need" class="input-radio-button no-need"
                         >필요 없어요</label
@@ -212,7 +206,7 @@
                   </p>
                   <input
                     type="text"
-                    placeholder="연락처를 입력해주세요."
+                    placeholder="연락처를 입력해 주세요."
                     class="input-text"
                     required
                   />
@@ -250,18 +244,21 @@
                     </button>
                   </div>
                   <div class="agreement-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam, eius ipsam fugiat dolores est nisi illum magnam
-                    rerum dolorum, animi autem nam odit nobis enim, sunt
-                    provident veritatis alias rem!<br /><br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam, eius ipsam fugiat dolores est nisi illum magnam
-                    rerum dolorum, animi autem nam odit nobis enim, sunt
-                    provident veritatis alias rem!<br /><br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam, eius ipsam fugiat dolores est nisi illum magnam
-                    rerum dolorum, animi autem nam odit nobis enim, sunt
-                    provident veritatis alias rem!<br /><br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit possimus voluptatibus sit officia natus asperiores
+                    molestias placeat magni, corporis eius laboriosam facere
+                    nemo obcaecati tenetur reiciendis quam in consequuntur
+                    beatae?<br /><br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit possimus voluptatibus sit officia natus asperiores
+                    molestias placeat magni, corporis eius laboriosam facere
+                    nemo obcaecati tenetur reiciendis quam in consequuntur
+                    beatae?<br /><br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit possimus voluptatibus sit officia natus asperiores
+                    molestias placeat magni, corporis eius laboriosam facere
+                    nemo obcaecati tenetur reiciendis quam in consequuntur
+                    beatae?<br /><br />
                   </div>
                 </li>
                 <li class="agreement-item">
@@ -272,10 +269,11 @@
                     </button>
                   </div>
                   <div class="agreement-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam, eius ipsam fugiat dolores est nisi illum magnam
-                    rerum dolorum, animi autem nam odit nobis enim, sunt
-                    provident veritatis alias rem!<br /><br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit possimus voluptatibus sit officia natus asperiores
+                    molestias placeat magni, corporis eius laboriosam facere
+                    nemo obcaecati tenetur reiciendis quam in consequuntur
+                    beatae?
                   </div>
                 </li>
                 <li class="agreement-item">
@@ -288,10 +286,11 @@
                     </button>
                   </div>
                   <div class="agreement-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aperiam, eius ipsam fugiat dolores est nisi illum magnam
-                    rerum dolorum, animi autem nam odit nobis enim, sunt
-                    provident veritatis alias rem!<br /><br />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit possimus voluptatibus sit officia natus asperiores
+                    molestias placeat magni, corporis eius laboriosam facere
+                    nemo obcaecati tenetur reiciendis quam in consequuntur
+                    beatae?
                   </div>
                 </li>
               </ul>
@@ -308,13 +307,14 @@
         <!-- 주문하기 버튼 -->
         <div class="btn-order-area">
           <button class="btn-order">
-            <svg viewBox="0 0 18 18" class="ico-n-logo">
+            <svg viewBox="0 0 18 18" width="18" height="18" class="ico-n-logo">
               <path
                 fill-rule="evenodd"
                 fill="currentColor"
                 d="M18 0v18H0V0h18zM7.255 4.582H4.473v9.054h2.915V8.79l3.357 4.846h2.782V4.582h-2.915v4.846L7.255 4.582z"
-              ></path></svg
-            >주문하기
+              ></path>
+            </svg>
+            주문하기
           </button>
         </div>
         <!-- // 주문하기 버튼 -->
@@ -325,14 +325,13 @@
         </div>
         <!-- // 맨위로 -->
       </div>
-    </div>
 
-    <!-- 모달 -->
-    <div class="modal-wrapper hidden">
-      <div class="dimmed-layer light">
+      <!-- 모달 -->
+      <div class="modal-wrapper hidden">
+        <div class="dimmed-layer light"></div>
         <div class="modal-container">
           <div class="modal-content">
-            <button class="btn-close">
+            <button class="btn-close" onClick="modalClose()">
               <svg
                 width="16"
                 height="16"
@@ -344,7 +343,7 @@
                 <path d="M2 14L14 2" stroke="#999" stroke-width="1.5" />
               </svg>
             </button>
-            <div class="modal icon">
+            <div class="modal-icon">
               <svg viewBox="0 0 32 32" width="38" height="38">
                 <path
                   fill="currentColor"
@@ -360,12 +359,34 @@
             <p class="modal-desc">모달에 관련된 설명글이 적힙니다.</p>
           </div>
           <div class="btn-area">
-            <button class="btn-cancel">취소</button>
-            <button class="btn-confirm">확인</button>
+            <button class="btn-cancel" onClick="modalClose()">취소</button>
+            <button class="btn-confirm" onClick="modalClose()">확인</button>
           </div>
         </div>
       </div>
+      <!-- // 모달 -->
     </div>
-    <!-- // 모달 -->
+
+    <script>
+      // 메뉴 리스트 토글
+      const btnToggle = document.querySelectorAll(".btn-toggle");
+      const toggleMenuList = (e) => {
+        e.currentTarget.closest(".agreement-item").classList.toggle("is-open");
+      };
+
+      btnToggle.forEach(function (e) {
+        e.addEventListener("click", toggleMenuList);
+      });
+
+      // 모달
+      const modalOpen = () => {
+        document.querySelector("body").classList.add("scroll-off");
+        document.querySelector(".modal-wrapper").classList.remove("hidden");
+      };
+      const modalClose = () => {
+        document.querySelector("body").classList.remove("scroll-off");
+        document.querySelector(".modal-wrapper").classList.add("hidden");
+      };
+    </script>
   </body>
 </html>
