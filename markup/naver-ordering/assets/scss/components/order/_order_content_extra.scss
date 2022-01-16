@@ -1,0 +1,86 @@
+.order-content-extra {
+    .orderer-info-area,
+    .plcae-map-area,
+    .agreement-area {
+        padding: 0 $m-padding 30px;
+        background-color: #fff;
+    }
+
+    .title {
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $booking-color-text2;
+    }
+
+    .orderer-info-area {
+        .info-item {
+            margin-top: 20px;
+        }
+
+        .info-title {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color: $booking-color-text2;
+            &::before {
+                content: "";
+                margin-right: 8px;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: #d5dadd;
+            }
+        }
+
+        .option-group {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            height: 45px;
+            .option-item {
+                flex: 1;
+            }
+        }
+
+        .input-radio {
+            position: absolute;
+            &:checked {
+                & + .input-radio-button {
+                    background-color: $green;
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .input-radio-button {
+            display: block;
+            border: 1px solid $booking-color-border110;
+            background-color: $booking-color-bg3;
+            color: $booking-color-text5;
+            font-size: 15px;
+            line-height: 45px;
+            text-align: center;
+            &.need {
+                border-radius: 5px 0 0 5px;
+            }
+            &.no-need {
+                border-radius: 0 5px 5px 0;
+                border-left: 0;
+            }
+        }
+
+        .input-text {
+            display: block;
+            margin-top: 10px;
+            padding: 0 12px;
+            width: 100%;
+            height: 45px;
+            border: 1px solid $booking-color-border112;
+            background-color: $booking-color-bg2;
+            color: $booking-color-text2;
+            font-size: 15px;
+        }
+    }
+}

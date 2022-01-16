@@ -162,6 +162,69 @@
           <a href="#" class="btn-menu-add"> <i class="ico-add"></i>메뉴추가 </a>
         </div>
         <!-- // 주문서 메뉴 -->
+
+        <!-- 주문자 정보 -->
+        <div class="order-content-extra">
+          <div class="common-inner">
+            <div class="orderer-info-area">
+              <p class="title">주문자 정보</p>
+              <ul class="info-list">
+                <li class="info-item">
+                  <p class="info-title">일회용 수저, 포크</p>
+                  <div class="option-group">
+                    <div class="option-item">
+                      <input
+                        type="radio"
+                        id="need"
+                        class="input-radio"
+                        name="disposables"
+                      />
+                      <label for="need" class="input-radio-button need"
+                        >필요해요</label
+                      >
+                    </div>
+                    <div class="option-item">
+                      <input
+                        type="radio"
+                        id="no-need"
+                        class="input-radio"
+                        name="disposables"
+                        checked
+                      />
+                      <label for="no-need" class="input-radio-button no-need"
+                        >필요 없어요</label
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="info-item">
+                  <p class="info-title">요청사항</p>
+                  <input
+                    type="text"
+                    placeholder="(선택) 요청사항을 입력해 주세요."
+                    class="input-text"
+                  />
+                </li>
+                <li class="info-item">
+                  <p class="info-title">
+                    주문자 연락처<span class="fw700 color-point">(필수)</span>
+                  </p>
+                  <input
+                    type="text"
+                    placeholder="연락처를 입력해주세요."
+                    class="input-text"
+                    required
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="place-map-area"></div>
+
+            <div class="agreement-area"></div>
+          </div>
+        </div>
+        <!-- // 주문자 정보 -->
       </div>
     </div>
   </body>
