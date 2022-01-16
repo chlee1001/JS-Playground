@@ -7,7 +7,7 @@
     <title>네이버 주문 페이지</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
-  <body class="scroll-off">
+  <body>
     <div class="container">
       <!-- 고정헤더 영역 -->
       <header class="header-area">
@@ -108,7 +108,9 @@
                   <button class="btn-plus" aria-label="더하기"></button>
                 </div>
               </div>
-              <button class="btn-order">1개 담기 9,999원</button>
+              <button class="btn-order" onClick="popupOpen()">
+                1개 담기 9,999원
+              </button>
               <!-- <button class="btn-order" disabled>
                 지금 주문 가능한 시간이 아닙니다.
               </button> -->
@@ -225,7 +227,7 @@
       <!-- // 주문자리뷰 영역 -->
 
       <!-- 옵션팝업 영역 -->
-      <div class="option-popup-area hidden">
+      <div class="option-popup-area">
         <div class="dimmed-layer light"></div>
         <div class="menu-option-popup">
           <svg class="content-top-pattern" width="100%" height="100%">
@@ -270,7 +272,7 @@
                   <button class="btn-plus" aria-label="더하기"></button>
                 </div>
               </div>
-              <button class="btn-close">
+              <button class="btn-close" onclick="popupClose()">
                 <img
                   src="../assets/images/ico-close.svg"
                   alt=""
@@ -455,5 +457,16 @@
       </div>
       <!-- // 옵션팝업 영역 -->
     </div>
+
+    <script>
+      const popupOpen = () => {
+        document.querySelector("body").classList.add("scroll-off");
+        document.querySelector(".option-popup-area").classList.add("show");
+      };
+      const popupClose = () => {
+        document.querySelector("body").classList.remove("scroll-off");
+        document.querySelector(".option-popup-area").classList.remove("show");
+      };
+    </script>
   </body>
 </html>

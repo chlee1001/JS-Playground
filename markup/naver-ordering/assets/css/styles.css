@@ -1167,9 +1167,28 @@ textarea::-webkit-outer-spin-button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
+  z-index: 1;
+}
+
+.option-popup-area.show {
+  height: 100%;
   z-index: 5000;
+}
+
+.option-popup-area.show .dimmed-layer {
+  opacity: 1;
+}
+
+.option-popup-area.show .menu-option-popup {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.option-popup-area .dimmed-layer {
+  position: absolute;
+  opacity: 0;
 }
 
 .option-popup-area .menu-option-popup {
@@ -1186,6 +1205,12 @@ textarea::-webkit-outer-spin-button {
   max-height: calc(100% - 45px);
   background-color: #f4f7f9;
   z-index: 10000;
+  -webkit-transform: translateY(110%);
+          transform: translateY(110%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .option-popup-area .content-top-pattern {
@@ -1194,6 +1219,7 @@ textarea::-webkit-outer-spin-button {
   width: 100%;
   height: 11px;
   fill: white;
+  z-index: 2;
 }
 
 .option-popup-area .content-top {
@@ -2476,6 +2502,13 @@ textarea::-webkit-outer-spin-button {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+  opacity: 1;
+  -webkit-transition: oppacity 0.3s ease;
+  transition: oppacity 0.3s ease;
+}
+
+.dimmed-layer.hidden {
+  opacity: 0;
 }
 
 .dimmed-layer.light {
