@@ -7,7 +7,7 @@
     },
     {
       "content": "테스트 2",
-      "completed": true,
+      "completed": false,
       "id": 2
     },
     {
