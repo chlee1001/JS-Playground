@@ -10,6 +10,9 @@
     const $form = get('.todo_form');
     const $todoInput = get('.todo_input');
 
+    const limit = 5;
+    let currentPage = 1;
+
     const createTodoElement = (item) => {
         const {id, content, completed} = item
         const $todoItem = document.createElement('div')
@@ -55,7 +58,7 @@
     }
 
     const getTodos = () => {
-        fetch(API_URL)
+        fetch(`${API_URL}?_page=${currentPage}&_limit=${limit}`)
             .then(response => response.json())
             .then(
                 todos => renderAllTodos(todos))
