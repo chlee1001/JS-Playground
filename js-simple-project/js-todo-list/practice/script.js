@@ -1,16 +1,18 @@
 ;(function () {
-  'use strict'
+    'use strict'
 
-  const get = (target) => {
-    return document.querySelector(target)
-  }
+    const get = (target) => {
+        return document.querySelector(target)
+    }
 
-  const createTodoElement = (item) => {
-    const { id, content } = item
-    const $todoItem = document.createElement('div')
-    $todoItem.classList.add('item')
-    $todoItem.dataset.id = id
-    $todoItem.innerHTML = `
+    const $todos = get('.todos');
+
+    const createTodoElement = (item) => {
+        const {id, content} = item
+        const $todoItem = document.createElement('div')
+        $todoItem.classList.add('item')
+        $todoItem.dataset.id = id
+        $todoItem.innerHTML = `
             <div class="content">
               <input
                 type="checkbox"
@@ -36,9 +38,32 @@
               </button>
             </div>
       `
-    return $todoItem
-  }
+        return $todoItem
+    }
 
-  const init = () => {}
-  init()
+    const renderAllTodos = (todos) => {
+        $todos.innerHTML = '';
+        todos.forEach(item => {
+            const todoElement = createTodoElement(item);
+            $todos.appendChild(todoElement);
+        })
+
+    }
+
+    const getTodos = () => {
+        fetch('http://localhost:3000/todos')
+            .then(response => response.json())
+            .then(
+                todos => renderAllTodos(todos))
+            .catch(e => {
+                console.error(e);
+            })
+    }
+
+    const init = () => {
+        window.addEventListener('DOMContentLoaded', () => { // HTML전부 불러왔을 때 getTodos함수 실행
+            getTodos();
+        })
+    }
+    init()
 })()
