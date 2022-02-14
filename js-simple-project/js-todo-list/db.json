@@ -1,8 +1,8 @@
 {
   "todos": [
     {
-      "content": "테스트 1",
-      "completed": false,
+      "content": "테스트 1 수정",
+      "completed": true,
       "id": 1
     },
     {
