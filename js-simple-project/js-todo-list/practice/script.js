@@ -5,7 +5,10 @@
         return document.querySelector(target)
     }
 
+    const API_URL = 'http://localhost:3000/todos';
     const $todos = get('.todos');
+    const $form = get('.todo_form');
+    const $todoInput = get('.todo_input');
 
     const createTodoElement = (item) => {
         const {id, content} = item
@@ -47,11 +50,10 @@
             const todoElement = createTodoElement(item);
             $todos.appendChild(todoElement);
         })
-
     }
 
     const getTodos = () => {
-        fetch('http://localhost:3000/todos')
+        fetch(API_URL)
             .then(response => response.json())
             .then(
                 todos => renderAllTodos(todos))
@@ -60,10 +62,29 @@
             })
     }
 
+    const addTodo = (e) => {
+        e.preventDefault(); // 새로고침 방지
+        const todo = {
+            content: $todoInput.value,
+            completed: false,
+        };
+        fetch(API_URL, {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(todo),
+        }).then(getTodos).then(() => {
+            $todoInput.value = '';
+            $todoInput.focus();
+        }).catch(e => console.error(e));
+    }
+
     const init = () => {
         window.addEventListener('DOMContentLoaded', () => { // HTML전부 불러왔을 때 getTodos함수 실행
             getTodos();
         })
+        $form.addEventListener('submit', addTodo);
     }
     init()
 })()
