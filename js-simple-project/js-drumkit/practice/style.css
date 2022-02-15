@@ -49,7 +49,7 @@ body {
 }
 
 kbd {
-  font-family: 'notosans';
+  font-family: 'notosans', serif;
   font-weight: 700;
   display: block;
   pointer-events: none;
