@@ -5,10 +5,14 @@
     return document.querySelector(target)
   }
 
+  let page = 1
+  let total = 10
+  const limit = 10
+  const end = 100
   const $posts = get('.posts')
 
   const getPost = async () => {
-    const API_URL = 'https://jsonplaceholder.typicode.com/posts'
+    const API_URL = `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${limit}`
     const response = await fetch(API_URL)
     if (!response.ok) {
       throw new Error('에러가 발생했습니다.')
@@ -38,7 +42,23 @@
     showPosts(response)
   }
 
+  const onScroll = () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement
+
+    if (total === end) {
+      window.removeEventListener('scroll', onScroll)
+      return
+    }
+
+    if ((scrollTop + clientHeight) >= (scrollHeight - 10)) {
+      page += 1
+      total += 10
+      loadPost()
+    }
+  }
+
   window.addEventListener('DOMContentLoaded', () => {
     loadPost()
+    window.addEventListener('scroll', onScroll)
   })
 })()
