@@ -9,7 +9,9 @@
   let total = 10
   const limit = 10
   const end = 100
+
   const $posts = get('.posts')
+  const $loader = get('.loader')
 
   const getPost = async () => {
     const API_URL = `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${limit}`
@@ -37,9 +39,24 @@
     })
   }
 
+  const showLoader = () => {
+    $loader.classList.add('show')
+  }
+
+  const hideLoader = () => {
+    $loader.classList.remove('show')
+  }
+
   const loadPost = async () => {
-    const response = await getPost()
-    showPosts(response)
+    showLoader()
+    try {
+      const response = await getPost()
+      showPosts(response)
+    } catch (error) {
+      console.log(error)
+    } finally {
+      hideLoader()
+    }
   }
 
   const onScroll = () => {
