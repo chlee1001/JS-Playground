@@ -8,6 +8,15 @@
   const $list = getAll('.contents.list figure')
   const $searchButton = get('.btn_search')
 
+  const $player = get('.view video')
+  const $btnPlay = get('.js-play')
+  const $btnRePlay = get('.js-replay')
+  const $btnStop = get('.js-stop')
+  const $btnMute = get('.js-mute')
+  const $progress = get('.js-progress')
+  const $volume = get('.js-volume')
+  const $fullscreen = get('.js-fullScreen')
+
   const search = () => {
     let searchText = $search.value.toLowerCase()
 
@@ -53,6 +62,90 @@
     getViewPage()
   }
 
+  const setProgress = () => {
+    $progress.value = Math.floor(100 / $player.duration) * $player.currentTime
+
+  }
+  const buttonChange = (btn, value) => {
+    btn.innerHTML = value
+  }
+
+  const getCurrent = (e) => {
+    let percent = e.offsetX / $progress.offsetWidth
+    $player.currentTime = percent * $player.duration
+    e.target.value = Math.floor(percent / 100)
+  }
+
+  const playVideo = () => {
+    if ($player.paused || $player.ended) {
+      buttonChange($btnPlay, 'pause')
+      $player.play()
+    } else {
+      buttonChange($btnPlay, 'play')
+      $player.pause()
+    }
+  }
+
+  const stopVideo = () => {
+    $player.pause()
+    $player.currentTime = 0
+    buttonChange($btnPlay, 'play')
+  }
+
+  const resetPlayer = () => {
+    $progress.value = 0
+    $player.currentTime = 0
+    buttonChange($btnPlay, 'play')
+  }
+
+  const replayVideo = () => {
+    resetPlayer()
+    $player.play()
+    buttonChange($btnPlay, 'pause')
+  }
+
+  const mute = () => {
+    if ($player.muted) {
+      buttonChange($btnMute, 'mute')
+      $player.muted = false
+    } else {
+      buttonChange($btnMute, 'unmute')
+      $player.muted = true
+    }
+  }
+
+  const fullScreen = () => {
+    if ($player.requestFullscreen) {
+      if (document.fullscreenElement) {
+        document.cancelFullScreen()
+      } else {
+        $player.requestFullscreen()
+      }
+    }
+  }
+
+  const viewPageEvent = () => {
+    $volume.addEventListener('change', e => {
+      $player.volume = e.target.value
+    })
+
+    $player.addEventListener('timeupdate', setProgress)
+    $player.addEventListener('play', buttonChange($btnPlay, 'pause'))
+    $player.addEventListener('pause', buttonChange($btnPlay, 'play'))
+    $player.addEventListener('volumechange', () => {
+      $player.muted
+        ? buttonChange($btnMute, 'unmute')
+        : buttonChange($btnMute, 'mute')
+    })
+    $player.addEventListener('ended', $player.pause())
+    $progress.addEventListener('click', getCurrent)
+    $btnPlay.addEventListener('click', playVideo)
+    $btnStop.addEventListener('click', stopVideo)
+    $btnRePlay.addEventListener('click', replayVideo)
+    $btnMute.addEventListener('click', mute)
+    $fullscreen.addEventListener('click', fullScreen)
+  }
+
   const init = () => {
     $search.addEventListener('keyup', search)
     $searchButton.addEventListener('click', search)
@@ -74,6 +167,8 @@
         getListPage()
       }
     })
+
+    viewPageEvent()
   }
 
   init()
