@@ -46,7 +46,7 @@ section {
     height: 100%;
     padding: 0 10px;
     border: 1px solid #303030;
-    background: #121212;
+    background-color: #121212;
     caret-color: #fff;
     font-size: 16px;
     color: #fff;
@@ -100,7 +100,7 @@ section {
 }
 
 .search_bar label .btn_search svg path {
-    fill: #fff
+    fill: #fff;
 }
 
 .contents {
@@ -117,10 +117,6 @@ section {
 }
 
 .contents.list {
-    display: none;
-}
-
-.contents.view {
     display: flex;
 }
 
@@ -170,10 +166,13 @@ section {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    transition: -webkit-filter 0.3s;
     transition: filter 0.3s;
+    transition: filter 0.3s, -webkit-filter 0.3s;
 }
 
-.contents figure picture:hover {
+.contents figure picture:hover, .contents figure picture:active, .contents figure picture:focus {
+    -webkit-filter: brightness(1.2);
     filter: brightness(1.2);
 }
 
@@ -202,7 +201,7 @@ section {
     transition: color 0.3s;
 }
 
-.contents figcaption .description:hover {
+.contents figcaption .description:hover, .contents figcaption .description:active, .contents figcaption .description:focus {
     color: #fff;
 }
 
@@ -211,11 +210,13 @@ section {
     margin-bottom: 4px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    /* autoprefixer: off */
     -webkit-box-orient: vertical;
+    /* autoprefixer: on */
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     font-weight: 400;
 }
@@ -236,7 +237,6 @@ section {
     color: #ff4e45;
     text-align: center;
 }
-
 
 .controls {
     display: flex;
@@ -299,6 +299,6 @@ section {
 @media (max-width: 480px) {
     .contents figure {
         flex: 0 0 100%;
-        margin: 0
+        margin: 0;
     }
 }
