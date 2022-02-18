@@ -1,18 +1,18 @@
 {
   "todos": [
     {
-      "content": "테스트 1aaadfaadfafadfafadfadfadxfadadfdflkjfladfjaldfjdklfajdaklfljadjajljldj",
+      "content": "테스트 1aaadfaadfafadfafadfadfadxfa",
       "completed": false,
       "recommended": false,
       "id": 1,
-      "recommend": false
+      "recommend": true
     },
     {
       "content": "테스트 2",
       "completed": true,
       "id": 2,
       "recommended": true,
-      "recommend": false
+      "recommend": true
     },
     {
       "content": "테스트 3",
