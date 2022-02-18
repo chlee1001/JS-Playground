@@ -65,8 +65,9 @@
   }
 
   const createTodoElement = (item) => {
-    const { id, content, completed } = item
+    const { id, content, completed, recommend } = item
     const isChecked = completed ? 'checked' : ''
+    const isRecommend = recommend ? 'active' : ''
     const $todoItem = document.createElement('div')
     $todoItem.classList.add('item')
     $todoItem.dataset.id = id
@@ -81,6 +82,10 @@
               <input type="text" value="${content}" />
             </div>
             <div class="item_buttons content_buttons">
+              <button class="todo_recommend_button ${isRecommend}">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+              </button>
               <button class="todo_edit_button">
                 <i class="far fa-edit"></i>
               </button>
@@ -109,12 +114,12 @@
   }
 
   const getTodos = () => {
-    fetch(`${API_URL}?_page=${currentPage}&_limit=${limit}`)
-      .then((response) => response.json())
-      .then((todos) => {
+    fetch(`${API_URL}?_page=${currentPage}&_limit=${limit}`).
+      then((response) => response.json()).
+      then((todos) => {
         renderAllTodos(todos)
-      })
-      .catch((error) => console.error(error.message))
+      }).
+      catch((error) => console.error(error.message))
   }
 
   const addTodo = (e) => {
@@ -129,14 +134,10 @@
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(todo),
-    })
-      .then((response) => response.json())
-      .then(getTodos)
-      .then(() => {
-        $todoInput.value = ''
-        $todoInput.focus()
-      })
-      .catch((error) => console.error(error.message))
+    }).then((response) => response.json()).then(getTodos).then(() => {
+      $todoInput.value = ''
+      $todoInput.focus()
+    }).catch((error) => console.error(error.message))
   }
 
   const toggleTodo = (e) => {
@@ -148,10 +149,10 @@
       method: 'PATCH',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({ completed }),
-    })
-      .then((response) => response.json())
-      .then(getTodos)
-      .catch((error) => console.error(error.message))
+    }).
+      then((response) => response.json()).
+      then(getTodos).
+      catch((error) => console.error(error.message))
   }
 
   const changeEditMode = (e) => {
@@ -192,10 +193,10 @@
       method: 'PATCH',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({ content }),
-    })
-      .then((response) => response.json())
-      .then(getTodos)
-      .catch((error) => console.error(error.message))
+    }).
+      then((response) => response.json()).
+      then(getTodos).
+      catch((error) => console.error(error.message))
   }
 
   const removeTodo = (e) => {
@@ -205,10 +206,26 @@
 
     fetch(`${API_URL}/${id}`, {
       method: 'DELETE',
-    })
-      .then((response) => response.json())
-      .then(getTodos)
-      .catch((error) => console.error(error.message))
+    }).
+      then((response) => response.json()).
+      then(getTodos).
+      catch((error) => console.error(error.message))
+  }
+
+  const recommendTodo = (e) => {
+    if (!e.target.classList.contains('todo_recommend_button')) return
+    const $item = e.target.closest(('.item'))
+    const id = $item.dataset.id
+    const recommend = !e.target.classList.contains('active')
+    fetch(`${API_URL}/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify({ recommend }),
+    }).
+      then(response => response.json()).
+      then(getTodos).
+      catch((error) => console.error(error.message))
+
   }
 
   const init = () => {
@@ -222,6 +239,7 @@
     $todos.addEventListener('click', changeEditMode)
     $todos.addEventListener('click', editTodo)
     $todos.addEventListener('click', removeTodo)
+    $todos.addEventListener('click', recommendTodo)
   }
 
   init()
