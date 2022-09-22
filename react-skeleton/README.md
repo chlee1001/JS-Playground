@@ -1,5 +1,7 @@
-# React Typescript Simple Boilerplate
-Create React App 사용을 벗어나 직접 react 프로젝트를 Typescript로 구성하고 필요한 셋팅을 추가한 boilerplate입니다.
+# React Skeleton
+
+![react-skeleton1](https://user-images.githubusercontent.com/2025813/191800289-7c8c4040-3fd7-4ab3-ad23-6187fec9dbc6.png)
+![react-skeleton2](https://user-images.githubusercontent.com/2025813/191800291-67b9e28f-9178-4399-9e4b-27b37a122e6a.png)
 
 
 ## Prerequisites
