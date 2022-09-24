@@ -1,5 +1,7 @@
 # React Carousel
 
+![react-carousel](https://user-images.githubusercontent.com/2025813/192105574-a8ec232d-105b-4b64-9889-034015d59485.png)
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/)
