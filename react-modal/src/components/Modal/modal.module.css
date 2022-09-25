@@ -1,0 +1,17 @@
+.ModalEnterActive {
+    opacity: 0;
+}
+
+.ModalEnterDone{
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.ModalExitActive {
+    opacity: 1;
+}
+
+.ModalExitDone {
+    opacity: 0;
+    transition: opacity 300ms;
+}
