@@ -1,4 +1,6 @@
 # React Modal
+![image](https://user-images.githubusercontent.com/2025813/192150444-42180056-c34e-4c90-85e6-f6d5a231210e.png)
+![image](https://user-images.githubusercontent.com/2025813/192150456-97f7e807-8e72-4624-9c3f-37feb367f524.png)
 
 ## Prerequisites
 
