@@ -1,4 +1,6 @@
 # React Pagination
+![pagination](https://user-images.githubusercontent.com/2025813/192148433-789407a2-36f1-4440-8c50-1808d7d75596.png)
+
 
 ## Prerequisites
 
