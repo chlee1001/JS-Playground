@@ -9542,7 +9542,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:7123664d4094820b32f190a78bc9eb41c13a87151b6c38f6f98f9afd47787e52cfbba185a2ad2b01451414f5c99e68dca1183bf002ae338e1bbee99de19c8f30#npm:6.7.1"],\
             ["html-webpack-plugin", "virtual:7123664d4094820b32f190a78bc9eb41c13a87151b6c38f6f98f9afd47787e52cfbba185a2ad2b01451414f5c99e68dca1183bf002ae338e1bbee99de19c8f30#npm:5.5.0"],\
             ["mini-css-extract-plugin", "virtual:7123664d4094820b32f190a78bc9eb41c13a87151b6c38f6f98f9afd47787e52cfbba185a2ad2b01451414f5c99e68dca1183bf002ae338e1bbee99de19c8f30#npm:2.6.1"],\
-            ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:18.2.0"],\
             ["react-is", "npm:18.2.0"],\
@@ -9584,7 +9583,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:2b21ac7039aa24a1c791854fa250b89b5bffd1dc2f12856dba5ea587ed58239e5f7c668714af52ad525f084209e114467ba672ca10cce7586e44ab3b3c5e3fc2#npm:6.7.1"],\
             ["html-webpack-plugin", "virtual:2b21ac7039aa24a1c791854fa250b89b5bffd1dc2f12856dba5ea587ed58239e5f7c668714af52ad525f084209e114467ba672ca10cce7586e44ab3b3c5e3fc2#npm:5.5.0"],\
             ["mini-css-extract-plugin", "virtual:2b21ac7039aa24a1c791854fa250b89b5bffd1dc2f12856dba5ea587ed58239e5f7c668714af52ad525f084209e114467ba672ca10cce7586e44ab3b3c5e3fc2#npm:2.6.1"],\
-            ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:18.2.0"],\
             ["react-icons", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:4.4.0"],\
@@ -9684,7 +9682,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:abf9d2a0597619802115be4536b19537a070b267208cee476b09c57ef4a0a580f839a12d8dc93439b1a71691df32e87108793432f7162eb5922b515d49eeacd6#npm:6.7.1"],\
             ["html-webpack-plugin", "virtual:abf9d2a0597619802115be4536b19537a070b267208cee476b09c57ef4a0a580f839a12d8dc93439b1a71691df32e87108793432f7162eb5922b515d49eeacd6#npm:5.5.0"],\
             ["mini-css-extract-plugin", "virtual:abf9d2a0597619802115be4536b19537a070b267208cee476b09c57ef4a0a580f839a12d8dc93439b1a71691df32e87108793432f7162eb5922b515d49eeacd6#npm:2.6.1"],\
-            ["prettier", "npm:2.7.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:18.2.0"],\
             ["react-is", "npm:18.2.0"],\

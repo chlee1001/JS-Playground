@@ -6692,7 +6692,6 @@ __metadata:
     css-loader: ^6.7.1
     html-webpack-plugin: ^5.5.0
     mini-css-extract-plugin: ^2.6.1
-    prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-is: ^18.2.0
@@ -6732,7 +6731,6 @@ __metadata:
     css-loader: ^6.7.1
     html-webpack-plugin: ^5.5.0
     mini-css-extract-plugin: ^2.6.1
-    prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-icons: ^4.4.0
@@ -6801,7 +6799,6 @@ __metadata:
     css-loader: ^6.7.1
     html-webpack-plugin: ^5.5.0
     mini-css-extract-plugin: ^2.6.1
-    prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-is: ^18.2.0
