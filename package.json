@@ -2,8 +2,8 @@
   "name": "js-playground",
   "private": true,
   "workspaces": {
-    "react-playground": [
-      "./*"
+    "packages": [
+      "./react-playground/*"
     ]
   },
   "scripts": {
