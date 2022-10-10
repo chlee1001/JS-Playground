@@ -3111,6 +3111,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/lodash", [\
+        ["npm:4.14.186", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.186-63caeea1e5-ee0c1368a8.zip/node_modules/@types/lodash/",\
+          "packageDependencies": [\
+            ["@types/lodash", "npm:4.14.186"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/mime", [\
         ["npm:3.0.1", {\
           "packageLocation": "./.yarn/cache/@types-mime-npm-3.0.1-dec03536dc-4040fac73f.zip/node_modules/@types/mime/",\
@@ -4401,6 +4410,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:0.27.2"],\
             ["follow-redirects", "virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.15.2"],\
             ["form-data", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/axios-npm-1.1.2-555440647b-136c25a503.zip/node_modules/axios/",\
+          "packageDependencies": [\
+            ["axios", "npm:1.1.2"],\
+            ["follow-redirects", "virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.15.2"],\
+            ["form-data", "npm:4.0.0"],\
+            ["proxy-from-env", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9537,6 +9556,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["proxy-from-env", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/proxy-from-env-npm-1.1.0-c13d07f26b-ed7fcc2ba0.zip/node_modules/proxy-from-env/",\
+          "packageDependencies": [\
+            ["proxy-from-env", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["punycode", [\
         ["npm:2.1.1", {\
           "packageLocation": "./.yarn/cache/punycode-npm-2.1.1-26eb3e15cf-823bf443c6.zip/node_modules/punycode/",\
@@ -9703,15 +9731,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-react", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:7.18.6"],\
             ["@babel/preset-typescript", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:7.18.6"],\
             ["@pmmmwh/react-refresh-webpack-plugin", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:0.5.7"],\
+            ["@types/lodash", "npm:4.14.186"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@types/react-router-dom", "npm:5.3.3"],\
             ["@types/styled-components", "npm:5.1.26"],\
+            ["axios", "npm:1.1.2"],\
             ["babel-loader", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:8.2.5"],\
             ["clean-webpack-plugin", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:4.0.0"],\
             ["cross-env", "npm:7.0.3"],\
             ["css-loader", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:6.7.1"],\
             ["html-webpack-plugin", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:5.5.0"],\
+            ["lodash", "npm:4.17.21"],\
             ["mini-css-extract-plugin", "virtual:72178ab2cce2a53f12237a7ad27053c365a1e5769c328b1063dfceeeb07f052bd2dc69ee38986a6ff488785124cb5f6281b23a42c96f12e7c3318baed2a82806#npm:2.6.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c173a7a924e94aed41b9e50a3baaf4ab72e35a767b81e59911a5be77798e8dc071ac876c89d559830c7e67f2274c6a0cb137eeb8bdeb92d4ff04cc5f3372b0f3#npm:18.2.0"],\
