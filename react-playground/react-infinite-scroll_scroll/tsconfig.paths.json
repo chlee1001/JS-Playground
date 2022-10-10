@@ -23,12 +23,12 @@
       "@styles/*": [
         "./src/styles/*"
       ],
-      "@types/*": [
-        "./src/types/*"
-      ],
       "@utils/*": [
         "./src/utils/*"
       ],
+      "@_types/*": [
+        "./src/types/*"
+      ]
     }
   }
 }
