@@ -9922,6 +9922,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.6"],\
             ["@types/react-router-dom", "npm:5.3.3"],\
             ["@types/styled-components", "npm:5.1.26"],\
+            ["axios", "npm:1.1.2"],\
             ["babel-loader", "virtual:c94ddaf8a4f88f85bc4d7c6bb29e8b9062aef002f4714bc42f177bac8a8f4f8468a65d4ce2224b3e91dd1b248476adcb2e6918ab56e1c9e7a34c7661d80457e5#npm:8.2.5"],\
             ["clean-webpack-plugin", "virtual:c94ddaf8a4f88f85bc4d7c6bb29e8b9062aef002f4714bc42f177bac8a8f4f8468a65d4ce2224b3e91dd1b248476adcb2e6918ab56e1c9e7a34c7661d80457e5#npm:4.0.0"],\
             ["cross-env", "npm:7.0.3"],\
